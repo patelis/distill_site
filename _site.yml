@@ -1,12 +1,25 @@
-name: "distill_site"
-title: "My Blog"
+name: "kpatelis_distill"
+title: "KPatelis Blog"
+theme: theme.css
 description: |
-  My Blog
+  The personal blog of Konstantinos Patelis
 output_dir: "_site"
+base_url: https://kpatelis.com
 navbar:
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+    - text: "CV"
+      href: about.html
+    - icon: fa fa-twitter
+      href: https://twitter.com/k_patelis
+    - icon: fa fa-github
+      href: https://github.com/patelis
+    - icon: fa fa-rss
+      href: index.xml
+collections:
+  posts:
+    share: [twitter, linkedin]
 output: distill::distill_article
