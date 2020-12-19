@@ -79,3 +79,9 @@ d-appendix {
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 
+.algolia-autocomplete {
+  
+  padding-top: 6px;
+  border-radius: 12px;
+  
+}

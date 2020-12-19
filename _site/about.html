@@ -90,7 +90,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
   <meta property="description" itemprop="description" content="Some additional details about the blog"/>
   
-  <link rel="icon" type="image/png" href="images/favicon-32x32.png"/>
+  <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/>
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -2147,7 +2147,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
-  </style>
+  
+  .algolia-autocomplete {
+    
+    padding-top: 6px;
+    border-radius: 12px;
+    
+  }</style>
   <style type="text/css">
   /* base style */
   
@@ -2319,6 +2325,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
+<a class="logo" href="https://kpatelis.com">
+<img src="images/favicon-32x32.png" alt="Logo"/>
+</a>
 <a href="index.html" class="title">Konstantinos Patelis</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>

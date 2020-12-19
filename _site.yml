@@ -7,6 +7,9 @@ output_dir: "_site"
 base_url: https://kpatelis.com
 favicon: images/favicon.ico
 navbar:
+  logo: 
+    image: images/favicon-32x32.png
+    href: https://kpatelis.com
   right:
     - text: "Home"
       href: index.html
