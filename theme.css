@@ -85,3 +85,27 @@ d-appendix {
   border-radius: 12px;
   
 }
+
+h2 a {
+    border-bottom: none;
+    
+}
+
+h2 a:hover {
+    border-bottom: none;
+}
+
+.about-container{
+    display: flex;
+}
+.about-fixed{
+    width: 300px;
+    text-align: center;
+}
+.about-flex-item{
+    flex-grow: 1;
+}
+
+.aligned{
+  text-align: justify;
+}
