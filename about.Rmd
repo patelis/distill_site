@@ -21,6 +21,7 @@ library(fontawesome)
 fill <- "#2a9d8f"
 ```
 
+#
 ## About this blog and its author
 
 Hey there! My name is Konstantinos Patelis, welcome to my blog!  
