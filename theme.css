@@ -117,4 +117,12 @@ h2 a:hover {
 .list-group-item:hover{
   background-color: #2a9d8f;
   border: 1px solid #2a9d8f;
+  color: #fff;
 }
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #2a9d8f;
+    border-color: #2a9d8f;
+}
+
