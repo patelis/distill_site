@@ -1,0 +1,65 @@
+---
+title: "Konstantinos Patelis"
+image: "images/profpic.png"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/kospatelis/"
+  - label: Twitter
+    url: "https://twitter.com/k_patelis"
+  - label: GitHub
+    url: "https://github.com/patelis"
+  - label: Email
+    url: "mailto:kpatelis@outlook.com"
+output:
+  postcards::trestles
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(fontawesome)
+fill <- "#2a9d8f"
+```
+
+# Curriculum Vitae
+
+You can download a detailed, paged version of my CV in [html](kpatelis_cv.html) or [pdf](kpatelis_cv.pdf) format.
+
+## Education
+
+###### MSc in Management, Technology and Economics @ Swiss Federal Institute of Technology (ETHZ)
+
+* Thesis Title: “The effects of immigration reform on the health sector - Evidence from Switzerland”
+* Experience in economic theory, econometrics, business analytics
+
+###### MEng in Mechanical Engineering (313 ECTS) @ National Technical University of Athens (NTUA)
+
+* Thesis Title: “Contribution to the Aerodynamic Optimization of the DrivAer Generic Car Model using Continuous Adjoint Methods and OpenFOAM”
+* Specialization: Air and Ground Transport Vehicles
+
+## Industry Experience
+
+###### Credit Risk Analyst - Combined Stress Testing @ UBS AG Business Solutions
+
+* In charge of analysing multiple models under the Combined Stress Testing and Economic Capital Frameworks
+* Contributing to internal and regulatory reporting both for UBS Group AG and its Legal Entities
+* Improved efficiency of regulatory reporting by a factor of 10 by automating data processing and report generation through R scripts
+* Augmented my team’s analytical tools by creating dashboards with R and Shiny to analyse increasing volumes of data
+* Team representative in strategic infrastructure improvement projects
+* Performing business adoption testing for IT-designed solutions
+* Set requirements and developed prototypes for strategic adoption of analytical dashboards and automatic report generation for our models
+
+###### Intern - Risk Analysis and Reporting @ UBS AG Business Solutions
+
+* Responsible for 7 individual Issuer & Credit Risk reports
+* Analysing on scenario-based stress metrics of the Issuer Risk portfolio
+* Contributing to key senior management and regulatory deliverables
+* Responding timely and effectively to ad-hoc analysis requests
+* Improved reporting efficiency by 90% through VBA automation
+
+###### Skills
+
+* R
+* Shiny
+* Microsoft Office
+* VBA

@@ -16,7 +16,7 @@ navbar:
     - text: "About"
       href: about.html
     - text: "CV"
-      href: about.html
+      href: cv.html
     - icon: fa fa-twitter
       href: https://twitter.com/k_patelis
     - icon: fa fa-github
