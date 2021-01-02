@@ -21,7 +21,9 @@ library(fontawesome)
 fill <- "#2a9d8f"
 ```
 
-#
+<br>
+<br>
+
 ## About this blog and its author
 
 <div style="text-align: justify">
