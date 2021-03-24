@@ -29,6 +29,7 @@ collections:
 # resources: 
 #   exclude:
 #     *.zip
-output: distill::distill_article:
-  includes:
-    in_header: utterances.html
+output: 
+  distill::distill_article:
+    includes:
+      in_header: utterances.html
