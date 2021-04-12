@@ -12,23 +12,17 @@
       <link>https://kpatelis.com</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Apr 2021 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>Test</title>
+      <title>Classification modelling workflow using tidymodels</title>
       <dc:creator>Konstantinos Patelis</dc:creator>
-      <link>https://kpatelis.com/posts/2021-03-24-test</link>
-      <description>A short description of the post.</description>
-      <guid>https://kpatelis.com/posts/2021-03-24-test</guid>
-      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Welcome to My Blog</title>
-      <dc:creator>Konstantinos Patelis</dc:creator>
-      <link>https://kpatelis.com/posts/welcome</link>
-      <description>Welcome to our new blog, My Blog. We hope you enjoy 
-reading what we have to say!</description>
-      <guid>https://kpatelis.com/posts/welcome</guid>
-      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      <link>https://kpatelis.com/posts/2021-04-11-classification-modeling-workflow-using-tidymodels</link>
+      <description>In this post we demonstrate a complete modelling workflow to solve a classification problem using the tidymodels ecosystem of packages. We'll pre-process the data, set up different models and tune their different hyperparameters. In the end we will see which model performs best, based on its out-of-sample accuracy and even try our hand at creating an ensemble model.</description>
+      <category>classification</category>
+      <category>tidymodels</category>
+      <category>stacks</category>
+      <guid>https://kpatelis.com/posts/2021-04-11-classification-modeling-workflow-using-tidymodels</guid>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
