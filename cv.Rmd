@@ -48,21 +48,21 @@ You can download a detailed, paged version of my CV in [html](kpatelis_cv.html){
 
 ###### Credit Risk Analyst - Combined Stress Testing @ UBS AG Business Solutions
 
-* In charge of analysing multiple models under the Combined Stress Testing and Economic Capital Frameworks
-* Contributing to internal and regulatory reporting both for UBS Group AG and its Legal Entities
-* Improved efficiency of regulatory reporting by a factor of 10 by automating data processing and report generation through R scripts
-* Augmented my team’s analytical tools by creating dashboards with R and Shiny to analyse increasing volumes of data
+* In charge of model analytics for investment bank credit models under the Combined Stress Testing and Economic Capital Frameworks
+* Designed and implemented advanced analytics tools and dashboards with R and the Shiny package to handle increasing volumes of data
+* Improved efficiency of regulatory deliverables by a factor of 10 by automating data processing pipelines
 * Team representative in strategic infrastructure improvement projects
-* Performing business adoption testing for IT-designed solutions
-* Set requirements and developed prototypes for strategic adoption of analytical dashboards and automatic report generation for our models
+* Contributing to internal and regulatory delivarables both for UBS Group AG and its Legal Entities
+* Proposed requirements and developed prototypes for strategic adoption of analytics tools
+* Benchmarked and tested IT solutions to evaluate readiness for business adoption
 
 ###### Intern - Risk Analysis and Reporting @ UBS AG Business Solutions
 
 * Responsible for 7 individual Issuer & Credit Risk reports
-* Analysing on scenario-based stress metrics of the Issuer Risk portfolio
-* Contributing to key senior management and regulatory deliverables
-* Responding timely and effectively to ad-hoc analysis requests
-* Improved reporting efficiency by 90% through VBA automation
+* Provided analytics support on stress metrics of the Issuer Risk portfolio
+* Contributed to key senior management and regulatory deliverables
+* Provided analytics support for ad-hoc requests timely and effectively
+* Improved process efficiency by a factor of 10 through VBA automation
 
 <br>
 
@@ -70,5 +70,7 @@ You can download a detailed, paged version of my CV in [html](kpatelis_cv.html){
 
 * R
 * Shiny
+* SQL
+* Power BI
 * Microsoft Office
 * VBA
