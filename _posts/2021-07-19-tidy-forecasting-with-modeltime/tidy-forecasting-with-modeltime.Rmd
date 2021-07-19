@@ -1,0 +1,75 @@
+---
+title: "Tidy Forecasting with Modeltime"
+description: |
+  A short description of the post.
+draft: true
+author:
+  - name: Konstantinos Patelis
+    url: https://kpatelis.com/
+date: 07-19-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+```{r libraries}
+
+library(tidyverse)
+library(lubridate)
+library(tidymodels)
+library(timetk)
+library(here)
+
+```
+
+
+## Introduction
+
+```{r data}
+
+df <- read_csv(here("data", "hierarchical_sales_data.csv"))
+
+df <- df %>% 
+  pivot_longer(cols = c(starts_with("QTY"), starts_with("PROMO")), 
+               names_to = "type", 
+               values_to = "value") %>% 
+  extract(col = type, into = c("type", "product"), regex = "(QTY|PROMO)_(.+)") %>% 
+  pivot_wider(names_from = "type", values_from = "value") %>% 
+  rename(date = DATE, quantity = QTY, promotion = PROMO)
+
+```
+
+
+```{r}
+
+df %>% 
+  # mutate(date = ym(paste0(year(date), "-", month(date)))) %>% 
+  group_by(date) %>% 
+  summarise(quantity = sum(quantity), .groups = "drop") %>% 
+  plot_time_series(.date_var = date, .value = quantity)
+
+```
+
+```{r}
+
+df %>% 
+  filter(str_detect(product, "B1")) %>% 
+  plot_time_series(.date_var = date, .value = quantity, .facet_vars = product, .facet_ncol = 10)
+  
+
+```
+
+https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data#
+
+In this series of blog posts we'll go through the process of forecasting a time series in R, from initial exploratory analysis to selecting the best model for the job. For this, we will utilize the [modeltime](%22https://business-science.github.io/modeltime/articles/getting-started-with-modeltime.html%22) package, which is the time series extension of the [tidymodels](%22https://www.tidymodels.org/%22) ecosystem. An alternative, providing support for some types of models, primarily based on classical forecasting approaches, is the [tidyverts](%22https://tidyverts.org/%22) family of packages, that can be installed by installing the [fpp3]() package.
+
+We will use a [Kaggle dataset](<https://www.kaggle.com/twinkle0705/state-wise-power-consumption-in-india>) that provides information on energy consumption in India between 2019 and mid-2020. The dataset contains daily values on consumption but is relatively short and on top of it is only sparsely populated for some months in 2020. Keep in mind that the Coronavirus lockdown in India was put in place at the end of March and that might have affected energy consumption. Since we don't have enough data to measure this effect and then enough data to forecast afterwards, the approach will be that we will use the data from 2019 to train our model and the first three months of 2020 will be reserved for testing our forecasts. The downside to this dataset is, as mentioned, that it is short and some effects might not become

@@ -1,7 +1,7 @@
 ---
-title: "Classification modelling workflow using tidymodels"
+title: "Classification modeling workflow using tidymodels"
 description: |
-  In this post we demonstrate a complete modelling workflow to solve a classification problem using the tidymodels ecosystem of packages. We'll pre-process the data, set up different models and tune their different hyperparameters. In the end we will see which model performs best, based on its out-of-sample accuracy and even try our hand at creating an ensemble model.
+  In this post we demonstrate a complete modeling workflow to solve a classification problem using the tidymodels ecosystem of packages. We'll pre-process the data, set up different models and tune their different hyperparameters. In the end we will see which model performs best, based on its out-of-sample accuracy and even try our hand at creating an ensemble model.
 author:
   - name: Konstantinos Patelis
     url: https://kpatelis.com/
@@ -304,7 +304,7 @@ You can highlight a circle to see the values for which that correlation was calc
 
 Even excluding the columns mentioned above, there are a lot of features and presenting more information on EDA here would get too extensive. Since the purpose here is to demonstrate the modeling process with `tidymodels`, we will not be performing a more extensive EDA. For quick data exploration, you can use `DataExplorer::create_report(eda)` and `explore::explore(eda)` (after installing the two packages) to get a full data report on the data set from the former and a shiny app for interactive exploration from the latter.  
 
-## Modelling
+## modeling
 
 In this section we will define the recipe to pre-process the data, specify the models and combine these steps in a workflow. Then we will use cross-validation to tune the various hyper-parameters of the models.
 
@@ -753,4 +753,4 @@ We can see our ensemble assigned high weights to boost_tree models, you'll need 
 
 While there was not much room for improvement, as mentioned in the beginning, this was a good opportunity to play around with the new package in practice.  
 
-Although this data set did not present much of a challenge in terms of predicting the outcome, we managed to cover many of the different steps in the modelling process using `tidymodels`. Further steps one could take in their analyses could potentially involve using functionality from the `tidyposterior` package to make statistical comparisons between the models we constructed that performed similarly. Finally, the `tidymodels` ecosystem of packages is constantly growing and as an example, parts of this process could be further simplified/combined using the new [`workflowsets`](https://github.com/tidymodels/workflowsets) package which became available on CRAN while I was working on this post. 
+Although this data set did not present much of a challenge in terms of predicting the outcome, we managed to cover many of the different steps in the modeling process using `tidymodels`. Further steps one could take in their analyses could potentially involve using functionality from the `tidyposterior` package to make statistical comparisons between the models we constructed that performed similarly. Finally, the `tidymodels` ecosystem of packages is constantly growing and as an example, parts of this process could be further simplified/combined using the new [`workflowsets`](https://github.com/tidymodels/workflowsets) package which became available on CRAN while I was working on this post. 
