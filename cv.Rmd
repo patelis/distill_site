@@ -26,8 +26,6 @@ fill <- "#2a9d8f"
 
 ## Curriculum Vitae
 
-You can download a detailed, paged version of my CV in [html](kpatelis_cv.html){target="blank"} or [pdf](kpatelis_cv.pdf){target="blank"} format.
-
 <br>
 
 ### Education
@@ -46,7 +44,7 @@ You can download a detailed, paged version of my CV in [html](kpatelis_cv.html){
 
 ### Industry Experience
 
-###### Credit Risk Analyst - Combined Stress Testing @ UBS AG Business Solutions
+###### Credit Risk Analyst - Combined Stress Testing
 
 * In charge of model analytics for investment bank credit models under the Combined Stress Testing and Economic Capital Frameworks
 * Designed and implemented advanced analytics tools and dashboards with R and the Shiny package to handle increasing volumes of data
@@ -56,7 +54,7 @@ You can download a detailed, paged version of my CV in [html](kpatelis_cv.html){
 * Designed requirements and developed prototypes for strategic adoption of analytics tools within the organization
 * Benchmarked and tested IT solutions to evaluate readiness for business adoption
 
-###### Intern - Risk Analysis and Reporting @ UBS AG Business Solutions
+###### Intern - Risk Analysis and Reporting
 
 * Provided analytics support on modeled stress metrics of the Issuer Risk portfolio
 * Contributed to key senior management and regulatory deliverables
